@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SauceDemo Automation Suite">
+
+    <!-- Test for verifying that a locked_out_user cannot login -->
+    <test name="Verify Locked Out User Cannot Login">
+        <classes>
+            <class name="tests.LockedOutUserTest"/>
+        </classes>
+    </test>
+
+    <!-- Test for verifying that a standard_user can complete a full purchase -->
+    <test name="Verify Standard User Full Purchase Journey">
+        <classes>
+            <class name="tests.StandardUserPurchaseTest"/>
+        </classes>
+    </test>
+
+    <!-- Test for verifying that a performance_glitch_user can complete a full purchase -->
+    <test name="Verify Performance Glitch User Full Purchase Journey">
+        <classes>
+            <class name="tests.PerformanceGlitchUserPurchaseTest"/>
+        </classes>
+    </test>
+
+</suite>
